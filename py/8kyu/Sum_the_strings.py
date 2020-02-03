@@ -7,3 +7,7 @@ def sum_str(a, b):
         return b
     else:    
         return str(int(a) + int(b)) 
+
+# refactorized :
+def sum_str(a, b):
+    return str(int(a or 0) + int(b or 0))
