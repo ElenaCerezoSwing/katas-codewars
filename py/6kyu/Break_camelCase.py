@@ -7,4 +7,7 @@ def solution(s):
             letter = ' ' + letter
             new_s.append(letter)
     return ''.join(new_s)
-    
+
+  # Refactorized solution:
+  def solution(s):
+     return ''.join(letter if letter.islower() else ' ' + letter for letter in s)
