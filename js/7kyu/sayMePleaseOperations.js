@@ -22,7 +22,7 @@ function sayMeOperations(str) {
   for(let i = 2; i < a.length; i++) {
      let result = a[i] - a[i-1] ===  a[i-2] ? 'addition'
                 : a[i] + a[i-1] ===  a[i-2] ? 'subtraction'
-                : a[i] / a[i-1] ===  a[i-2] ? 'multiplication' : 'division';
+                : a[i-2] * a[i-1] ===  a[i] ? 'multiplication' : 'division';
     message.push(result);
   }
   let stringMessage = message.toString();
